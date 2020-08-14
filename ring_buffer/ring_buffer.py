@@ -2,11 +2,17 @@ class RingBuffer:
     def __init__(self, capacity):
         self.capacity = capacity  # max size it can be
         self.data = []  # holds the data
+        self.cur = 0
 
     def append(self, item):
-        self.data.append(item)  # add item to end
         if len(self.data) == self.capacity:  # if at max capacity
-            self.data.pop(0)  # remove at index 0
+            # replace node at index starting with 0 until end (self.cur is current index)
+            self.data[self.cur] = item
+            if self.cur >= self.capacity:
+                self.cur = 0
+            else:
+                self.cur += 1
+        else:
             self.data.append(item)  # add item to end
 
     def get(self):
