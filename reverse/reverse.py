@@ -40,7 +40,7 @@ class LinkedList:
         return False
 
     def reverse_list(self, node, prev):
-        prevNode = None  # SLL nothing before it
+        prevNode = None  # SLL nothing before it (should work...)
 
         while self.head != None or self.head.next != None:  # while head has value or next has value
             nextNode = self.head.next  # variable for next node

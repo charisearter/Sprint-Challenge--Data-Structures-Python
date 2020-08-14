@@ -21,4 +21,4 @@ class RingBuffer:
             self.__class__ = self.__Full
 
     def get(self):
-        return self.data  # return the list of elements
+        return self.data  # return the list of elements of not full
