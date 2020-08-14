@@ -66,7 +66,7 @@ Six seconds is an eternity so you've been tasked with speeding up the code. Your
 
 A follow-up question to think about: _*once you've used one of the data structures we implemented over the course of the week*_ in order to improve the runtime of the implementation, what other data structures (including ones from Python's standard library) are also possible candidates for improving the runtime of the implementation?
 
-[] #### Task 3. Reverse a Linked List
+[x] #### Task 3. Reverse a Linked List
 
 Inside of the `reverse` directory, you'll find a basic implementation of a Singly Linked List. _Without_ making it a Doubly Linked List (adding a tail attribute), complete the `reverse_list()` function within `reverse/reverse.py`.
 
